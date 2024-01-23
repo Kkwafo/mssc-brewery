@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
-@RequestMapping("/api/va/beer")
+@RequestMapping("/api/v1/beer")
 @RestController
 public class BeerController {
     private final BeerService beerService;
@@ -20,7 +20,7 @@ public class BeerController {
         this.beerService = beerService;
     }
 
-    @GetMapping({"{/beerId}"})
+    @GetMapping({"/{beerId}"})
     public ResponseEntity<BeerDto> getBeer(@PathVariable("beerId") UUID beerId){
         return new ResponseEntity<>(beerService.getBeerById(beerId), HttpStatus.OK);
 
