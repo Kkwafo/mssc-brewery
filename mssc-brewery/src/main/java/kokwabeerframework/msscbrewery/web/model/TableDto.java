@@ -5,16 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
-@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class BeerDto {
-private UUID id;
-private String beerName;
-private String beersStyle;
-private Long upc;
-private int price;
+@Data
+public class TableDto {
+    private UUID id;
+    private int orderNumber;
+   /* private List<item> items;
+   * */
+    private double total;
 }
