@@ -15,4 +15,19 @@ public class ItemServiceImpl implements  ItemService{
                 .quantity(2)
                 .build();
     }
+
+    @Override
+    public ItemDto saveNewItem(ItemDto itemDto) {
+        return null;
+    }
+
+    @Override
+    public void updateItem(UUID itemId, ItemDto itemDto) {
+
+    }
+
+    @Override
+    public void deleteItem(UUID itemId) {
+
+    }
 }

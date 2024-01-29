@@ -16,4 +16,19 @@ public class TableServiceImpl implements TableService{
                 .build();
 
     }
+
+    @Override
+    public TableDto saveNewTable(TableDto tableDto) {
+        return null;
+    }
+
+    @Override
+    public void updateTable(UUID tableId, TableDto tableDto) {
+
+    }
+
+    @Override
+    public void deleteTable(UUID tableId) {
+
+    }
 }
